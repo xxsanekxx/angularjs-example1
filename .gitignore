@@ -3,12 +3,16 @@
 .sass-cache
 *.css.map
 /node_modules
+/bower_components
 
 # IDE and editor specific files #
 #################################
 /nbproject
 .idea
-/public
+/public/css
+/public/fonts
+/public/img
+/public/js
 
 # OS generated files #
 ######################
