@@ -1,26 +1,23 @@
 {
-  "name": "grunt-boilerplate-sass",
+  "name": "example1",
   "version": "0.0.1",
-  "description": "boilerplate for my projects",
+  "description": "angular project1",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxsanekxx/grunt-boilerplate-sass.git"
+    "url": "https://github.com/xxsanekxx/angularjs-example1.git"
   },
   "keywords": [
-    "grunt-boilerplate-sass",
-    "grunt-boilerplate",
-    "boilerplate-front-end"
   ],
   "author": "trigada",
   "license": "GNU",
   "bugs": {
-    "url": "https://github.com/xxsanekxx/grunt-boilerplate-sass/issues"
+    "url": "https://github.com/xxsanekxx/angularjs-example1.git/issues"
   },
-  "homepage": "https://github.com/xxsanekxx/grunt-boilerplate-sass",
+  "homepage": "https://github.com/xxsanekxx/angularjs-example1.git",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-concurrent": "^1.0.0",
