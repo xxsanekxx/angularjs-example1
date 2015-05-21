@@ -6,8 +6,57 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-
+<div class="wrapper">
+    <div class="row" ng-controller="HeartbeatCtrl">
+        <div class="col-md-12">
+            <h1>Heartbeat</h1>
+            <p>Status of api service</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="service in services">
+                    <td>{{service.name}}</td>
+                    <td>{{service.status}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row" ng-controller="MonitoringCtrl">
+        <div class="col-md-12">
+            <h1>Monitoring</h1>
+            <p>Get some data from api monitoring</p>
+            <pre>
+                {{monitoring.data}}
+            </pre>
+        </div>
+    </div>
+    <div class="row" ng-controller="AdminCtrl">
+        <div class="col-md-12">
+            <h1>Admin</h1>
+            <p>Get some data from api admin</p>
+            <pre>
+                {{admin.data}}
+            </pre>
+        </div>
+    </div>
+    <div class="row" ng-controller="TradingCtrl">
+        <div class="col-md-12">
+            <h1>Trading</h1>
+            <p>Get some data from api trading</p>
+            <pre>
+                {{trading.data}}
+            </pre>
+        </div>
+    </div>
+</div>
 <script src="js/angular.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
 </body>
 </html>

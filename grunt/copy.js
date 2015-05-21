@@ -26,6 +26,13 @@ module.exports = {
                 cwd: "bower_components/font-awesome/fonts/",
                 src: ["**/*"],
                 dest: "<%= destPath %>/fonts/"
+            },
+            // bootstrap
+            {
+                expand: true,
+                cwd: "bower_components/bootstrap-sass/assets/fonts/",
+                src: ["**/*"],
+                dest: "<%= destPath %>/fonts/"
             }
             //end bower
         ]
