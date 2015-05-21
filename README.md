@@ -48,6 +48,6 @@ exampleApp.constant("config", {
     2.2 Еще через $routeProvider и resolve
     Пример: http://stackoverflow.com/questions/16286605/initialize-angularjs-service-with-asynchronous-data
   
-  Было бы не плохо в run чтобы было ассихронность, https://github.com/angular/angular.js/issues/4003 но пока нету
+  Было бы не плохо в run чтобы было асинхронность, https://github.com/angular/angular.js/issues/4003 но пока нету
 
 3. При рендере, например, добавлять в ```<script></script>``` настройки.
