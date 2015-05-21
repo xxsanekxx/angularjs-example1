@@ -39,12 +39,15 @@ exampleApp.constant("config", {
 ```
 2. Добавляем в апи бек-енда новый контроллер(демон) на роутер '/configs' со своим портом и перед инициализацией приложения получаем сначало эти данные по апи, а потом уже работаем по этим url
  Тут в ангуляре нашел только несколько способов
+
     2.1 Сначало фетчим конфиг, потом бутсрапим приложение
     ```javascript
     angular.bootstrap(document, ["exampleApp"]);
     ```
+    
     2.2 Еще через $routeProvider и resolve
     Пример: http://stackoverflow.com/questions/16286605/initialize-angularjs-service-with-asynchronous-data
+  
   Было бы не плохо в run чтобы было ассихронность, https://github.com/angular/angular.js/issues/4003 но пока нету
 
-3. При рендере, например, добавлять в <script></script> настройки.
+3. При рендере, например, добавлять в ```<script></script>``` настройки.
