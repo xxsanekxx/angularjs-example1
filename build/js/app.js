@@ -1,19 +1,20 @@
 (function() {
     "use strict";
-    var exampleApp = angular.module('exampleApp', ['exampleApp.controllers']);
+    var exampleApp = angular.module('exampleApp', ['exampleApp.controllers']),
+    url = "http://33.33.33.10";
 
     function fetchConfigs() {
         var initInjector = angular.injector(["ng"]);
         var $http = initInjector.get("$http");
 
-        return $http.get("http://33.33.33.10:8003/configs", {params: {access_token: true}}).then(function(response) {
+        return $http.get(url + ":8003/configs", {params: {access_token: true}}).then(function(response) {
             exampleApp.constant("config", response.data);
         }, function(errorResponse) {
             // Handle error case
         });
     }
 
-    exampleApp.constant("host", 'http://33.33.33.10');
+    exampleApp.constant("host", url);
     fetchConfigs().then(function() {
         angular.element(document).ready(function() {
             angular.bootstrap(document, ["exampleApp"]);
